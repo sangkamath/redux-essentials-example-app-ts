@@ -13,7 +13,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-redux": "^9",
-    "react-router-dom": "^6",
+    "react-router-dom": "^7.1.5",
     "react-tiny-toast": "^2.0.1"
   },
   "scripts": {
@@ -26,10 +26,11 @@
     "@types/node": "^20.11.6",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
+    "@types/react-router-dom": "^5.3.3",
     "@vitejs/plugin-react": "^4.2.1",
     "prettier": "^3.2.1",
     "typescript": "^5.4",
-    "vite": "^5.0.11"
+    "vite": "^5.4.14"
   },
   "msw": {
     "workerDirectory": "public"
