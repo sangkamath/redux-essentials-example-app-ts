@@ -1,6 +1,7 @@
 import { useAppSelector } from "@/app/hook";
 import { Link } from "react-router-dom";
 import { selectAllPosts } from "./postsSlice";
+import { PostAuthor } from "./PostAuthor";
 
 export const PostsList = () => {
     const posts = useAppSelector(selectAllPosts)
@@ -11,6 +12,9 @@ export const PostsList = () => {
                 <Link to={`/posts/${post.id}`}>
                 {post.title}
                 </Link>
+                <div>
+                    <PostAuthor userId={post.user} />
+                </div>
             </h3>
             <p className="post-content">{post.content.substring(0,100)}</p>
         </article>
